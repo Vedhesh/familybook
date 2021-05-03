@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+            <img src="me.png" width=350 height=350 id="image1">
+            <h1><kbd id="label1">Vedesh Muddapati<kbd></h1>
+            <button class="btn btn-primary" onclick="next()">Next Family Member</button>
+        </center>
+        <script>
+            var images = ["https://www.clipartmax.com/png/small/12-127045_%D1%84%D0%BE%D1%82%D0%BE-%D0%B0%D0%B2%D1%82%D0%BE%D1%80-soloveika-%D0%BD%D0%B0-%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81-kids-boy-cartoon.png","https://www.clipartmax.com/png/small/181-1812100_royalty-free-boy-clip-art-kids-good-bye.png","https://media.istockphoto.com/vectors/young-indian-business-woman-wearing-traditional-indian-costume-vector-id918643660?k=6&m=918643660&s=612x612&w=0&h=mxV4OhFvVWOPFs_K9S88Cn4qSY4Vyo4lvDQheeWlA-E=","https://p7.hiclipart.com/preview/875/398/562/glasses-man-model-the-man-with-glasses.jpg"];
+            var names = ["Vedesh Muddapati", "Lalitesh","Mum","Dad"];
+            var i = 0;
+            function next() {
+                i++;
+                var nofmia = 3;
+                if(i>nofmia) {
+                    i = 0;
+                }
+                var u_image = images[i];
+                var u_name = names[i];
+                document.getElementById("label1").innerHTML = u_name;
+                document.getElementById("image1").src = u_image;
+            }   
+        </script>
+    </body>
+</html>
